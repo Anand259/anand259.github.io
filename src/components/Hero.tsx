@@ -5,7 +5,7 @@ import Anand_Pandey from './../../public/assets/AnandPandey.jpg';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex dark:bg-gray-900 items-center justify-center pt-16">
-      <div className="container mx-auto px-6 text-center pt-4">
+      <div className="container mx-auto px-6 text-center pt-8">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8 animate-scale-in">

@@ -87,7 +87,7 @@ const Header: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
                 onClick={toggleTheme}
-                className="p-2 rounded-sm transition duration-300 bg-gray-200 dark:bg-gray-700 ml-[262px] dark:text-white md:hidden lg:hidden xl:hidden"
+                className="p-2 rounded-sm transition duration-300 bg-gray-200 dark:bg-gray-700 ml-40 dark:text-white md:hidden lg:hidden xl:hidden"
               >
                 {theme === "dark" ? <Moon /> : <Sun className='text-yellow-600'/>}
               </button>
