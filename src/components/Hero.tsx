@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import Anand_Pandey from './../../public/assets/AnandPandey.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -9,8 +10,8 @@ const Hero: React.FC = () => {
           {/* Profile Image */}
           <div className="mb-8 animate-scale-in">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary-500 to-accent-500 p-1 shadow-xl">
-              <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-4xl font-bold text-primary-600">
-                AP
+              <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-4xl font-bold text-primary-600 overflow-hidden">
+                <img src={Anand_Pandey}/>
               </div>
             </div>
           </div>
