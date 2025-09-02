@@ -26,8 +26,8 @@ const Contact: React.FC = () => {
       );
       setStatus("Sent!");
       if (formRef.current) formRef.current.reset();
-    } catch (e) {
-      setStatus("Failed to send.");
+    } catch (error) {
+      setStatus("Failed to send."+error);
     }
     setIsSubmitted(true);
     setTimeout(() => {

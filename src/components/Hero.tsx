@@ -4,8 +4,8 @@ import Anand_Pandey from './../../public/assets/AnandPandey.jpg';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
-      <div className="container mx-auto px-6 text-center">
+    <section id="home" className="min-h-screen flex dark:bg-gray-900 items-center justify-center pt-16">
+      <div className="container mx-auto px-6 text-center pt-4">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8 animate-scale-in">
@@ -18,13 +18,13 @@ const Hero: React.FC = () => {
 
           {/* Name and Title */}
           <div className="mb-8 animate-slide-up">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4">
               Anand Pandey
             </h1>
             <h2 className="text-2xl md:text-3xl text-primary-600 font-medium mb-6">
               Senior Web Developer
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto dark:text-white leading-relaxed">
               Dedicated and experienced PHP developer with ten years of expertise in web development, 
               seeking challenging opportunities to leverage my skills and contribute to innovative projects in the field.
             </p>
@@ -32,22 +32,22 @@ const Hero: React.FC = () => {
 
           {/* Contact Info */}
           <div className="mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="flex flex-wrap justify-center gap-6 text-gray-600">
+            <div className="flex flex-wrap justify-center gap-6 text-gray-600 dark:text-white">
               <a 
                 href="tel:+919451941696" 
-                className="flex items-center gap-2 hover:text-primary-600 transition-colors group"
+                className="flex items-center gap-2 hover:text-primary-600 dark:hover:text-yellow-400 transition-colors group"
               >
                 <Phone size={18} className="group-hover:scale-110 transition-transform" />
                 <span>+91-9451-941-696</span>
               </a>
               <a 
                 href="mailto:anandpandey259@gmail.com" 
-                className="flex items-center gap-2 hover:text-primary-600 transition-colors group"
+                className="flex items-center gap-2 hover:text-primary-600 dark:hover:text-yellow-400 transition-colors group"
               >
                 <Mail size={18} className="group-hover:scale-110 transition-transform" />
                 <span>anandpandey259@gmail.com</span>
               </a>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center dark:hover:text-yellow-400 gap-2">
                 <MapPin size={18} />
                 <span>Varanasi, Uttar Pradesh, India</span>
               </div>

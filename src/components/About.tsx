@@ -26,15 +26,15 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
               About Me
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-white max-w-3xl mx-auto leading-relaxed">
               I'm a passionate Senior Web Developer with over a decade of experience crafting 
               innovative web solutions. My journey has taken me from junior developer to leading 
               complex projects, always staying at the forefront of technology.
@@ -45,15 +45,15 @@ const About: React.FC = () => {
             {highlights.map((highlight, index) => (
               <div
                 key={index}
-                className="group p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl hover:from-primary-50 hover:to-accent-50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                className="group p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-600 dark:to-slate-700 rounded-xl hover:from-primary-50 hover:to-accent-50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-lg flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-200">
                   {highlight.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 dark:text-white">
                   {highlight.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-white text-sm leading-relaxed">
                   {highlight.description}
                 </p>
               </div>

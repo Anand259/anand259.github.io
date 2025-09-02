@@ -57,15 +57,15 @@ const Education: React.FC = () => {
   };
 
   return (
-    <section id="education" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <section id="education" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
               Education
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-white">
               Academic foundation that shaped my journey into web development.
             </p>
           </div>
@@ -74,7 +74,7 @@ const Education: React.FC = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
+                className="group bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
               >
                 <div className="p-6 md:p-8">
                   <div className="flex items-start gap-4">
@@ -84,10 +84,10 @@ const Education: React.FC = () => {
                     
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                        <h3 className="text-lg font-bold text-gray-800 mb-1 md:mb-0">
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-1 md:mb-0">
                           {edu.institution}
                         </h3>
-                        <div className="flex items-center text-gray-500 text-sm">
+                        <div className="flex items-center text-gray-500 dark:text-white text-sm">
                           <Calendar size={14} className="mr-2" />
                           {edu.period}
                         </div>
@@ -111,14 +111,14 @@ const Education: React.FC = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
+            <div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <GraduationCap className="w-8 h-8 text-primary-600" />
-                <h3 className="text-xl font-bold text-gray-800">
+                <GraduationCap className="w-8 h-8 text-primary-600 " />
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white">
                   Continuous Learning
                 </h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-white leading-relaxed">
                 Beyond formal education, I continuously update my skills through online courses, 
                 certifications, and hands-on experience with emerging technologies to stay current 
                 in the rapidly evolving web development landscape.

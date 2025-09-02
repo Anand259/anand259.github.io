@@ -41,15 +41,15 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
               Technical Skills
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-white max-w-2xl mx-auto">
               A comprehensive toolkit of modern technologies and frameworks I use to build exceptional web applications.
             </p>
           </div>
@@ -58,9 +58,9 @@ const Skills: React.FC = () => {
             {skillCategories.map((category, categoryIndex) => (
               <div 
                 key={categoryIndex}
-                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+                className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
               >
-                <h3 className="text-xl font-semibold text-gray-800 mb-6 flex items-center">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6 flex items-center">
                   <div className="w-2 h-8 bg-gradient-to-b from-primary-600 to-accent-600 rounded-full mr-3"></div>
                   {category.title}
                 </h3>
@@ -69,7 +69,7 @@ const Skills: React.FC = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="group">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-700 font-medium">{skill.name}</span>
+                        <span className="text-gray-700 dark:text-white font-medium">{skill.name}</span>
                         <span className="text-sm text-gray-500 group-hover:text-primary-600 transition-colors">
                           {skill.level}%
                         </span>
@@ -92,17 +92,17 @@ const Skills: React.FC = () => {
 
           {/* Languages Section */}
           <div className="mt-12">
-            <div className="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto">
-              <h3 className="text-xl font-semibold text-gray-800 mb-6 text-center">
+            <div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 max-w-md mx-auto">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6 text-center">
                 Languages
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-700 font-medium">English</span>
+                  <span className="text-gray-700 dark:text-white font-medium">English</span>
                   <span className="text-success-600 font-medium">Fluent</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-700 font-medium">Hindi</span>
+                  <span className="text-gray-700 dark:text-white font-medium">Hindi</span>
                   <span className="text-success-600 font-medium">Fluent</span>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { Calendar, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface Job {
   company: string;
@@ -64,15 +64,15 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
               Work Experience
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-white">
               A decade-long journey of growth, innovation, and delivering exceptional web solutions.
             </p>
           </div>
@@ -81,7 +81,7 @@ const Experience: React.FC = () => {
             {jobs.map((job, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-600 dark:to-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 <div
                   className="p-6 cursor-pointer"
@@ -90,17 +90,17 @@ const Experience: React.FC = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-xl font-bold text-gray-800">
+                        <h3 className="text-xl font-bold text-gray-800 dark:text-white">
                           {job.company}
                         </h3>
                         {job.current && (
-                          <span className="bg-success-100 text-success-700 px-3 py-1 rounded-full text-xs font-medium">
+                          <span className="bg-success-100 text-success-700 dark:bg-success-600 dark:text-success-100 px-3 py-1 rounded-full text-xs font-medium">
                             Current
                           </span>
                         )}
                       </div>
-                      <p className="text-primary-600 font-medium mb-1">{job.position}</p>
-                      <div className="flex items-center text-gray-500 text-sm">
+                      <p className="text-primary-600 dark:text-primary-500 font-medium mb-1">{job.position}</p>
+                      <div className="flex items-center text-gray-500 dark:text-white text-sm">
                         <Calendar size={14} className="mr-2" />
                         {job.period}
                       </div>
@@ -120,12 +120,12 @@ const Experience: React.FC = () => {
                     <div className="border-t border-gray-200 pt-6">
                       {/* Tech Stack */}
                       <div className="mb-6">
-                        <h4 className="text-sm font-semibold text-gray-700 mb-3">Tech Stack:</h4>
+                        <h4 className="text-sm font-semibold text-gray-700 dark:text-white mb-3">Tech Stack:</h4>
                         <div className="flex flex-wrap gap-2">
                           {job.techStack.map((tech, techIndex) => (
                             <span
                               key={techIndex}
-                              className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-primary-200 transition-colors"
+                              className="bg-primary-100 text-primary-700 dark:bg-primary-600 dark:text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-primary-200 transition-colors"
                             >
                               {tech}
                             </span>
@@ -135,12 +135,12 @@ const Experience: React.FC = () => {
 
                       {/* Responsibilities */}
                       <div>
-                        <h4 className="text-sm font-semibold text-gray-700 mb-3">Key Responsibilities:</h4>
+                        <h4 className="text-sm font-semibold text-gray-700 dark:text-white mb-3">Key Responsibilities:</h4>
                         <ul className="space-y-2">
                           {job.responsibilities.map((responsibility, respIndex) => (
                             <li
                               key={respIndex}
-                              className="flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
+                              className="flex items-start gap-3 text-gray-600 dark:text-white text-sm leading-relaxed"
                             >
                               <div className="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0"></div>
                               {responsibility}
